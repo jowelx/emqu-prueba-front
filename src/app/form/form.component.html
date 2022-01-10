@@ -1,0 +1,79 @@
+
+
+
+
+<div class="cont-p">
+<div class="div-cont">
+    <h2 class="title">&bull; ¿Que tanto usas las redes sociales? &bull;</h2>
+    <div class="underline">
+    </div>
+<form action="#" method="post" id="contact_form">
+    <label for="mail">¿Cual es tu correo?</label>
+    <input [formControl]="email"name="mail" type="email"/>
+   
+    <div class="telephone">
+        <label for="selectGender">Selecciona tu genero</label>
+        <select id="subject_input" [formControl]="gender" name="selectGender">
+            <option value="null"  selected></option>
+            <option value="woman">Mujer</option>
+            <option value="man">Hombre</option>
+          
+        </select>
+    </div>
+    <div class="telephone">
+        <label for="selectGender">¿Cual es tu red social favorita?</label>
+        <select id="subject_input" [formControl]="fav" name="selectGender">
+            <option value="null"  selected></option>
+            <option value="facebook">facebook</option>
+            <option value="whatsapp">whatsapp</option>
+            <option value="instagram">instagram</option>
+            <option value="tiktok">tiktok</option>
+            <option value="twiter">twiter</option>
+
+        </select>
+    </div>
+    <div class="subject">
+     
+     
+     <label for="selectAge">¿Que edad tienes?</label>
+      <select  [formControl]="age" id="subject_input" name="selectAge" required>
+        <option  selected>Subject line</option>
+        <option value="18-25">18-25</option>
+        <option value="26-33">26-33</option>
+        <option value="34-40">34-40</option>
+        <option value="+40">+40</option>
+    </select>
+    </div>
+ <div>
+     <label>¿Cuanto tiempo pasas en cada Red social??</label>
+ </div>
+    <div   class="social-input">
+        <label for="fb">Faceboock</label>
+        <input class="input-whidth"[formControl]="fb" type="number" name="fb"/>
+    </div>
+    <div  class="social-input">
+        <label for="ig">Instagram</label>
+        <input class="input-whidth"[formControl]="ig" type="number" name="ig"/>
+    </div>  
+    <div  class="social-input">
+        <label for="ws"> WhatsApp</label>
+        <input class="input-whidth"[formControl]="ws" type="number" name="ws"/>
+    </div>
+    <div  class="social-input">
+        <label for="tw">Twiter</label>
+        <input class="input-whidth"[formControl]="tw" type="number" name="tw"/>
+    </div>    
+    <div class="social-input">
+    <label for="tk">Tiktok</label>
+    <input class="input-whidth"[formControl]="tk" type="number" name="tk"/>
+    </div >
+    
+    
+    <div class="submit">
+
+      <a id="form_button" href="/statistics">Estadisticas</a>
+    </div>
+  </form>
+  <button id="form_button" (click)="onSubmit()">Enviar</button>
+</div>
+</div>

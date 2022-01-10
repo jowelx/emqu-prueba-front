@@ -1,0 +1,58 @@
+
+<div class="cont-p">
+  <div class="cont-card">
+ <p>Encuestas realizadas</p>  
+ <p>
+    {{data.encuestas}}
+</p> 
+  </div>  
+  <div class="cont-card">
+<p>
+    tiempo promedio por red social
+</p>
+
+  
+ 
+<ul>
+    <li> facebook: {{data.promfb |number}}Hrs</li>
+    <li> instagram: {{data.promig |number}}Hrs</li>
+    <li> whatsapp: {{data.promws |number}}Hrs</li>
+    <li> tiktok: {{data.promtk |number}}Hrs</li>
+    <li> twiter: {{data.promtw|number}}Hrs</li>
+</ul>
+</div>  
+<div class="cont-card">
+ <p>
+    Red social favorita
+ </p>   
+ <p>
+   {{data.fav}}
+ </p>  
+</div>  
+<div class="cont-card">
+    <p>
+        Red social menos querida
+     </p>  
+    <p>
+        {{data.od}}
+      </p>
+</div>  
+<div class="cont-card">
+    <p>
+        Rango de edad que más use cada red social
+  
+    </p>
+    <ul>
+        <li> facebook: {{data.facebook }}</li>
+        <li> instagram: {{data.instagram }}</li>
+        <li> whatsapp: {{data.whatsapp }}</li>
+        <li> tiktok: {{data.tiktok }}</li>
+        <li> twiter: {{data.twiter}}</li>
+    </ul>
+    </div>  
+  
+</div>
+<div class="cont-button">
+    <a id="form_button" href="/">Volver al inicio</a>
+</div>
+
