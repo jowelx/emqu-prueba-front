@@ -75,6 +75,7 @@ export class FormComponent implements OnInit {
     console.log(info)
     this.service.newRequest(info).subscribe(res=>{
       console.log(res)
+
     })
   }
 }

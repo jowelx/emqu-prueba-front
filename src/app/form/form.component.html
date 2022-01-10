@@ -7,7 +7,7 @@
     <h2 class="title">&bull; ¿Que tanto usas las redes sociales? &bull;</h2>
     <div class="underline">
     </div>
-<form action="#" method="post" id="contact_form">
+<div id="contact_form">
     <label for="mail">¿Cual es tu correo?</label>
     <input [formControl]="email"name="mail" type="email"/>
    
@@ -72,8 +72,10 @@
     <div class="submit">
 
       <a id="form_button" href="/statistics">Estadisticas</a>
+      <button id="form_button" (click)="onSubmit()">Enviar</button>
     </div>
-  </form>
-  <button id="form_button" (click)="onSubmit()">Enviar</button>
+
+  </div>
+
 </div>
 </div>

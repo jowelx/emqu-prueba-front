@@ -16,6 +16,7 @@ export class ConnectionService {
   }
   newRequest(form:any){
     return this.http.post("https://emqu-back.herokuapp.com/form",form)
+    
   }
   
 }
