@@ -12,10 +12,10 @@ export class ConnectionService {
    return this.http.get(url);
   }
   stadisticRequest(){
-    return this.http.get("http://localhost:4000/")
+    return this.http.get("https://emqu-back.herokuapp.com/")
   }
   newRequest(form:any){
-    return this.http.post("http://localhost:4000/form",form)
+    return this.http.post("https://emqu-back.herokuapp.com/form",form)
   }
   
 }
